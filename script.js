@@ -74,7 +74,7 @@ document.getElementById('save-button').addEventListener('click', () => {
     // 保存到本地存儲
     localStorage.setItem(`records_${month}`, JSON.stringify(records));
     // 提交到後端（將 URL 替換為後端部署後的 Web App URL）
-    fetch('https://script.google.com/macros/s/AKfycbyZDX5GR2QUvJ-wlbzsmY27mFHC1Wohkx5u6KlIywmE4JLs0dxQP-XQYmkiXdL2UQjd/execT_URLURL', {
+    fetch('https://script.google.com/macros/s/AKfycbyZDX5GR2QUvJ-wlbzsmY27mFHC1Wohkx5u6KlIywmE4JLs0dxQP-XQYmkiXdL2UQjd/exec', {
         method: 'POST',
         body: JSON.stringify({ month, records }),
         headers: { 'Content-Type': 'application/json' }
