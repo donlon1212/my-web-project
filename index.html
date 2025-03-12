@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教會關懷工具</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>教會關懷工具</h1>
+    <div id="group-info">
+        <p>牧區：<span id="district-name"></span></p>
+        <p>小組：<span id="group-name"></span></p>
+        <button id="set-group-info">設置牧區和小組</button>
+    </div>
+    <label for="month-select">選擇月份：</label>
+    <select id="month-select">
+        <!-- 月份選項將由 JavaScript 動態生成 -->
+    </select>
+    <table id="care-table">
+        <thead>
+            <tr>
+                <th>小組員</th>
+                <th>日期</th>
+                <th>符號</th>
+                <th>備註</th>
+                <th>其他補充</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 小組員行將由 JavaScript 動態生成 -->
+        </tbody>
+    </table>
+    <button id="save-button">保存記錄</button>
+    <script src="script.js"></script>
+</body>
+</html>
